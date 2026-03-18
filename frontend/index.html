@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Contract Analysis System</h1>
+        
+        <div class="card">
+            <div class="section input-section">
+                <label for="contractText">Contract Text</label>
+                <textarea id="contractText" placeholder="Paste your contract text here... (e.g., ABC Bank agrees to repay $5M before 2030.)"></textarea>
+            </div>
+            
+            <div class="section action-section">
+                <button id="analyzeBtn" onclick="analyzeContract()">Analyze Contract</button>
+            </div>
+            
+            <div class="section result-section" id="resultSection">
+                <h3>Extracted Entities</h3>
+                <div class="result-box">
+                    <div class="entity-row">
+                        <span class="entity-label">Obligor:</span>
+                        <span class="entity-value" id="resObligor">-</span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">Amount:</span>
+                        <span class="entity-value" id="resAmount">-</span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">Date:</span>
+                        <span class="entity-value" id="resDate">-</span>
+                    </div>
+                </div>
+                <!-- Error messages will appear here -->
+                <div id="error" class="error-state" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
