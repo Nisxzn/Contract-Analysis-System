@@ -1,4 +1,4 @@
-## Contract Analysis System
+# Contract Analysis System
 
 ## Objective
 A simple, beginner-friendly full-stack NLP project designed for academic demonstration. The goal of this system is to analyze short contract texts and extract key entities, specifically:
