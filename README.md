@@ -63,5 +63,5 @@ python app.py
 Simply open the `frontend/index.html` file using any modern Web Browser (Chrome, Firefox, Edge, etc.). Paste a contract sentence and run logic.
 
 ---
-**Created for academic assignment purposes.**
+**Created by nisxzn for academic assignment purposes.**
 
